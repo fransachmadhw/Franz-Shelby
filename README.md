@@ -1,7 +1,7 @@
 # Responsive Portfolio Website Franz Shelby
 
 ###  Responsive Portfolio Website
-Simple, clean, and minimalist personal or portfolio website. Including multiple theme (light and dark). Implements simple CSS Grid for base container. Low poly hero or jumbotron background including polygon low opacity background. Some images are already optimised.
+Simple, clean, and minimalist personal or portfolio website. Including multiple theme (light and dark). Implements simple CSS Grid for base container. Low poly hero or jumbotron background including polygon low opacity background. Some images are already optimised. CSS codes also already prefixed automatically.
 
 
 
@@ -34,3 +34,6 @@ Simple, clean, and minimalist personal or portfolio website. Including multiple 
 
 ## Squoosh App
 ## [Free image optimiser](https://squoosh.app/)
+
+## Auto Prefixer
+## [Autoprefixer CSS Online](https://autoprefixer.github.io/)
