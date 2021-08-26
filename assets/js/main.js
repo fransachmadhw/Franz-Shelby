@@ -68,6 +68,35 @@ const bgPoly2 = document.getElementById("skills");
 const bgPoly3 = document.getElementById("portfolio");
 const bgPoly4 = document.getElementById("contact");
 
+if (localStorage.getItem("theme") === null) 
+{
+    localStorage.setItem("theme", "light");
+}
+
+let localData = localStorage.getItem("theme");
+
+if (localData == "light")
+{
+    icon.src = "assets/img/moon.png";
+    document.body.classList.remove("dark-theme");
+    bgHome.style.backgroundImage = "url('assets/img/low-poly-light.svg')";
+    bgPoly1.style.backgroundImage = "url('assets/img/polygon-1-light.svg')";
+    bgPoly2.style.backgroundImage = "url('assets/img/polygon-2-light.svg')";
+    bgPoly3.style.backgroundImage = "url('assets/img/polygon-3-light.svg')";
+    bgPoly4.style.backgroundImage = "url('assets/img/polygon-4-light.svg')";
+}
+
+else if (localData == "dark")
+{
+    icon.src = "assets/img/sun.png";
+    document.body.classList.add("dark-theme");
+    bgHome.style.backgroundImage = "url('assets/img/low-poly-dark.svg')";
+    bgPoly1.style.backgroundImage = "url('assets/img/polygon-1-dark.svg')";
+    bgPoly2.style.backgroundImage = "url('assets/img/polygon-2-dark.svg')";
+    bgPoly3.style.backgroundImage = "url('assets/img/polygon-3-dark.svg')";
+    bgPoly4.style.backgroundImage = "url('assets/img/polygon-4-dark.svg')";
+}
+
 icon.onclick = function()
 {
     document.body.classList.toggle("dark-theme");
@@ -75,6 +104,7 @@ icon.onclick = function()
     if (document.body.classList.contains("dark-theme"))
     {
         icon.src = "assets/img/sun.png";
+        localStorage.setItem("theme", "dark")
         bgHome.style.backgroundImage = "url('assets/img/low-poly-dark.svg')";
         bgPoly1.style.backgroundImage = "url('assets/img/polygon-1-dark.svg')";
         bgPoly2.style.backgroundImage = "url('assets/img/polygon-2-dark.svg')";
@@ -84,6 +114,7 @@ icon.onclick = function()
     else
     {
         icon.src = "assets/img/moon.png";
+        localStorage.setItem("theme", "light")
         bgHome.style.backgroundImage = "url('assets/img/low-poly-light.svg')";
         bgPoly1.style.backgroundImage = "url('assets/img/polygon-1-light.svg')";
         bgPoly2.style.backgroundImage = "url('assets/img/polygon-2-light.svg')";

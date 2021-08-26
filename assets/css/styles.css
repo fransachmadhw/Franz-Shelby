@@ -385,8 +385,13 @@ img {
     transform: translate(-50%, -50%);
     transition: width 0.2s ease, height 0.2s ease;
   }
+
   .home_button:hover::before {
     --size: 200px;
+  }
+
+  .home_button:focus {
+      transform: scale(1.1);
   }
 
 .home_img {
@@ -608,6 +613,16 @@ img {
     outline: none;
     font-size: var(--normal-font-size);
     cursor: pointer;
+    transition: .3s ease;
+}
+
+.contact_button:hover {
+    background-color: var(--white-colour);
+    color: var(--subtitle-colour);
+}
+
+.contact_button:focus {
+    transform: scale(1.1);
 }
 
 /* Footer */
