@@ -44,7 +44,7 @@
             </nav>
         </header>
 
-        <main class="l-main">
+        <main class="l-main" id="main">
 
         <!--===== HOME =====-->
             <section class="home" id="home">
@@ -150,7 +150,8 @@
                     <img src="assets/img/work1.jpg" alt="">
 
                     <div class="portfolio_link">
-                        <a href="" class="portfolio_link-name">View Details</a>
+                        <!-- <a href="#portfolio" class="portfolio_link-name" onclick="toggle()">View Details</a> -->
+                        <span class="portfolio_link-name" onclick="toggle1()">View Details</span>
                     </div>
                 </div>
 
@@ -158,7 +159,7 @@
                     <img src="assets/img/work2.jpg" alt="">
 
                     <div class="portfolio_link">
-                        <a href="" class="portfolio_link-name">View Details</a>
+                        <span class="portfolio_link-name" onclick="toggle2()">View Details</span>
                     </div>
                 </div>
 
@@ -166,7 +167,7 @@
                     <img src="assets/img/work3.jpg" alt="">
 
                     <div class="portfolio_link">
-                        <a href="" class="portfolio_link-name">View Details</a>
+                        <span class="portfolio_link-name" onclick="toggle3()">View Details</span>
                     </div>
                 </div>
 
@@ -174,7 +175,7 @@
                     <img src="assets/img/work4.jpg" alt="">
 
                     <div class="portfolio_link">
-                        <a href="" class="portfolio_link-name">View Details</a>
+                        <span class="portfolio_link-name" onclick="toggle4()">View Details</span>
                     </div>
                 </div>
 
@@ -182,7 +183,7 @@
                     <img src="assets/img/work5.jpg" alt="">
 
                     <div class="portfolio_link">
-                        <a href="" class="portfolio_link-name">View Details</a>
+                        <span class="portfolio_link-name" onclick="toggle5()">View Details</span>
                     </div>
                 </div>
 
@@ -190,11 +191,13 @@
                     <img src="assets/img/work6.jpg" alt="">
 
                     <div class="portfolio_link">
-                        <a href="" class="portfolio_link-name">View Details</a>
+                        <span class="portfolio_link-name" onclick="toggle6()">View Details</span>
                     </div>
                 </div>
             </div>
         </section>
+
+        
             
         <!--===== CONTACT =====-->    
         <section class="contact section" id="contact">
@@ -209,7 +212,7 @@
                     <span class="contact_text">franswinata6@gmail.com</span>
 
                     <h3 class="contact_title">PHONE</h3>
-                    <span class="contact_text">12345</span>
+                    <span class="contact_text">+62 ....</span>
 
                     <h3 class="contact_title">ADDRESS</h3>
                     <span class="contact_text">Joyo Agung Street, Malang, East Java, Indonesia</span>
@@ -231,6 +234,100 @@
         </section>
 
         </main>
+
+        <!-- POPUP BOXES -->
+
+        <div class="popup" id="popup1">
+
+            <span class="close" onclick="toggle1()">&times;</span>
+
+            <div class="content">
+                
+                <h2>Work 1</h2>
+
+                <img src="assets/img/work1.jpg" alt="">
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam consectetur nisi unde itaque officia quaerat minus accusamus optio. Adipisci quod amet aliquam unde perferendis itaque sunt impedit illum cumque nulla reiciendis ipsum, eius a maiores reprehenderit rerum dolores dicta omnis quis, pariatur hic magni, cupiditate commodi. Non temporibus aliquid dolores unde eaque, ipsam voluptatem facere. Tempore sunt, a aut quasi, dolore suscipit ab unde ipsam accusantium deleniti voluptates quisquam impedit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, veniam minus. Sapiente assumenda natus incidunt dolorem nisi soluta reprehenderit modi culpa nam voluptatum, laborum, nesciunt possimus? Assumenda perspiciatis est aliquam impedit repellat sed ducimus magni.</p>
+
+            </div>
+        </div>
+
+        <div class="popup" id="popup2">
+
+            <span class="close" onclick="toggle2()">&times;</span>
+
+            <div class="content">
+                
+                <h2>Work 2</h2>
+
+                <img src="assets/img/work2.jpg" alt="">
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam consectetur nisi unde itaque officia quaerat minus accusamus optio. Adipisci quod amet aliquam unde perferendis itaque sunt impedit illum cumque nulla reiciendis ipsum, eius a maiores reprehenderit rerum dolores dicta omnis quis, pariatur hic magni, cupiditate commodi. Non temporibus aliquid dolores unde eaque, ipsam voluptatem facere. Tempore sunt, a aut quasi, dolore suscipit ab unde ipsam accusantium deleniti voluptates quisquam impedit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, veniam minus. Sapiente assumenda natus incidunt dolorem nisi soluta reprehenderit modi culpa nam voluptatum, laborum, nesciunt possimus? Assumenda perspiciatis est aliquam impedit repellat sed ducimus magni.</p>
+
+            </div>
+        </div>
+
+        <div class="popup" id="popup3">
+
+            <span class="close" onclick="toggle3()">&times;</span>
+
+            <div class="content">
+                
+                <h2>Work 3</h2>
+
+                <img src="assets/img/work3.jpg" alt="">
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam consectetur nisi unde itaque officia quaerat minus accusamus optio. Adipisci quod amet aliquam unde perferendis itaque sunt impedit illum cumque nulla reiciendis ipsum, eius a maiores reprehenderit rerum dolores dicta omnis quis, pariatur hic magni, cupiditate commodi. Non temporibus aliquid dolores unde eaque, ipsam voluptatem facere. Tempore sunt, a aut quasi, dolore suscipit ab unde ipsam accusantium deleniti voluptates quisquam impedit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, veniam minus. Sapiente assumenda natus incidunt dolorem nisi soluta reprehenderit modi culpa nam voluptatum, laborum, nesciunt possimus? Assumenda perspiciatis est aliquam impedit repellat sed ducimus magni.</p>
+
+            </div>
+        </div>
+
+        <div class="popup" id="popup4">
+
+            <span class="close" onclick="toggle4()">&times;</span>
+
+            <div class="content">
+                
+                <h2>Work 4</h2>
+
+                <img src="assets/img/work4.jpg" alt="">
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam consectetur nisi unde itaque officia quaerat minus accusamus optio. Adipisci quod amet aliquam unde perferendis itaque sunt.</p>
+
+            </div>
+        </div>
+
+        <div class="popup" id="popup5">
+
+            <span class="close" onclick="toggle5()">&times;</span>
+
+            <div class="content">
+                
+                <h2>Work 5</h2>
+
+                <img src="assets/img/work5.jpg" alt="">
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam consectetur nisi unde itaque officia quaerat minus accusamus optio. Adipisci quod amet aliquam unde perferendis itaque sunt.</p>
+
+            </div>
+        </div>
+
+        <div class="popup" id="popup6">
+
+            <span class="close" onclick="toggle6()">&times;</span>
+
+            <div class="content">
+                
+                <h2>Work 6</h2>
+
+                <img src="assets/img/work6.jpg" alt="">
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam consectetur nisi unde itaque officia quaerat minus accusamus optio. Adipisci quod amet aliquam unde perferendis itaque sunt.</p>
+
+            </div>
+        </div>
+
+
 
         <!--===== FOOTER =====-->
         <footer class="footer section">

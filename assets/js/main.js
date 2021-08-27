@@ -59,6 +59,68 @@ function scrollActive()
     })
 }
 
+// Pop up Box //
+function toggle1()
+{
+    const blur = document.getElementById('main');
+    const popup = document.getElementById('popup1');
+
+    blur.classList.toggle('popped');
+    popup.classList.toggle('popped');
+}
+
+function toggle2()
+{
+    const blur = document.getElementById('main');
+    const popup = document.getElementById('popup2');
+
+    blur.classList.toggle('popped');
+    popup.classList.toggle('popped');
+}
+
+function toggle3()
+{
+    const blur = document.getElementById('main');
+    const popup = document.getElementById('popup3');
+
+    blur.classList.toggle('popped');
+    popup.classList.toggle('popped');
+}
+
+function toggle4()
+{
+    const blur = document.getElementById('main');
+    const popup = document.getElementById('popup4');
+
+    blur.classList.toggle('popped');
+    popup.classList.toggle('popped');
+}
+
+function toggle5()
+{
+    const blur = document.getElementById('main');
+    const popup = document.getElementById('popup5');
+
+    blur.classList.toggle('popped');
+    popup.classList.toggle('popped');
+}
+
+function toggle6()
+{
+    const blur = document.getElementById('main');
+    const popup = document.getElementById('popup6');
+
+    blur.classList.toggle('popped');
+    popup.classList.toggle('popped');
+}
+
+
+
+
+
+
+
+
 
 // Theme Switcher //
 const icon = document.getElementById("icon");
